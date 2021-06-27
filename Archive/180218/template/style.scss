@@ -1,0 +1,277 @@
+/* index.jade ---------------------------- */
+body {
+	margin: 0 auto;
+	background: #ddd;
+}
+a {
+	color: #ceac5c;
+	text-decoration: none;
+	border-bottom: 1px solid #fff;
+	padding-bottom: 2px;
+	transition: 0.5s;
+	&:hover {
+		color: #333;
+		border-bottom: 1px solid #333;
+	}
+}
+.wrapper {
+	max-width: 600px;
+	margin: 5em auto;
+	color: #333;
+	overflow: hidden;
+	background: #fff;
+	padding: 2em;
+	transition: 1s;
+	box-shadow: 0 0 10px #ccc;
+	&:hover {
+		aside {
+			background: #eee;
+		}
+	}
+}
+aside {
+	line-height: 1.6em;
+	width: 25%;
+	float: left;
+	padding: 1em;
+	box-sizing: border-box;
+	transition: 0.5s;
+	#logo {
+		text-align: center;
+		#icon {
+			width: 100%;
+			display: block;
+		}
+		#name {
+			font-size: 23px;
+			font-weight: bold;
+			margin: 0.8em 0 1em;
+			margin-left: 3px;
+			letter-spacing: 3px;
+		}
+	}
+	ul#info {
+		margin: 0;
+		padding: 0;
+		font-family: monospace;
+		color: #000;
+		li {
+			list-style: none;
+		}
+		.fa {
+			font-size: 0.8em;
+			color: #333;
+		}
+	}
+}
+main {
+	font-family: Cambria, serif;
+	font-size: 18px;
+	line-height: 2.2em;
+	width: 70%;
+	float: right;
+	letter-spacing: 0.2px;
+	border-top: 2px solid #eee;
+	border-bottom: 2px solid #eee;
+	ruby rt {
+		font-size: 0.6em;
+		text-align: center;
+	}
+}
+footer {
+	font-family: "Microsoft Yahei", sans-serif;
+	font-weight: 100;
+	font-size: 12px;
+	position: fixed;
+	bottom: 1em;
+	text-align: center;
+	width: 600px;
+	letter-spacing: 0.3px;
+	color: #666;
+	.oh {
+		display: inline-block;
+	}
+	a {
+		color: #999;
+		border-color: #ddd;
+		padding-bottom: 0;
+	}
+}
+::-moz-selection { 
+	background: #fefecc;
+}
+::selection { 
+	background: #fefecc;
+}
+@media only screen and (max-width: 668px) {
+	.wrapper {
+		margin: 1em;
+		padding: 0 1em;
+		max-width: 100%;
+	}
+	aside {
+		float: none;
+		width: 100%;
+		background: #eee;
+		overflow: hidden;
+		margin: 2em auto 1em;
+		#logo {
+			float: left;
+			width: 25%;
+			margin-right: 1em;
+			#name {
+				font-size: 18px;
+				margin: 0.3em 0 0;
+				margin-left: 3px;
+			}
+		}
+	}
+	main {
+		float: none;
+		width: 100%;
+	}
+	footer {
+		position: static;
+		width: auto;
+		margin: 1em auto 2em;
+		.oh {
+			display: block;
+		}
+		a {
+			border-color: #fff;
+		}
+	}
+}
+
+/* photography.jade ---------------------------- */
+body#foto {
+	background: #eee;
+}
+#header {
+	width: 100%;
+	border-top: 2px solid #ceac5c;
+	background: #fff;
+	text-align: center;
+	padding: 1.2em 0 1em;
+	box-shadow: 0 0 10px #ddd;
+	a {
+		border: none;
+		color: #000;
+		&:hover {
+			color: #ceac5c;
+			img {
+				box-shadow: 0 0 6px #eee;
+			}
+		}
+	}
+	img {
+		max-width: 50px;
+		transition: 0.5s;
+		border: 5px solid #eee;
+	}
+	h1 {
+		margin: 0;
+		margin-top: 5px;
+		font-family: Microsoft Yahei, sans-serif;
+		font-weight: 100;
+		font-size: 14px;
+	}
+}
+#main {
+	max-width: 950px;
+	margin: 15em auto 8em;
+	overflow: auto;
+}
+#footer {
+	font-family: "Microsoft Yahei", sans-serif;
+	font-weight: 100;
+	font-size: 12px;
+	padding: 2em;
+	text-align: center;
+	letter-spacing: 0.3px;
+	color: #333;
+	background: #fff;
+	box-shadow: 0 0 10px #ddd;
+	.oh {
+		display: inline-block;
+	}
+	a {
+		color: #999;
+		border-bottom: 1px solid #fff;
+		padding-bottom: 0;
+		&:hover {
+			color: #333;
+			border-color: #333;
+		}
+	}
+}
+a#back_to_top {
+	border: none;
+	background: #fff;
+	padding-bottom: 0;
+	span {
+		line-height: 42px;
+	}
+}
+/* PhotoSwipe Plugin */
+.psgal {
+	margin: auto;
+	transition: 0.5s;
+	opacity: 0.1;
+}
+.psgal.photoswipe_showme {
+	opacity: 1;
+}
+.psgal figure {
+	float: left;
+	text-align: center;
+	width: 300px;
+	padding: 5px;
+	padding-bottom: 3px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+.psgal a {
+	display: block;
+	border: none;
+}
+.psgal img {
+	margin: auto;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	border: 0;
+	display: block;
+	box-shadow: 0 0 6px #aaa;
+	border-radius: 3px;
+	transition: 0.5s;
+	&:hover {
+		box-shadow: 0 0 20px 1px #ccc;
+		transform: translate3D(0, -1px, 0);
+	}
+}
+.psgal figure figcaption {
+	font-size: 13px;
+}
+.msnry {
+	margin: auto;
+}
+.pswp__caption__center {
+	text-align: center;
+	font-size: 14px;
+	font-family: Microsoft Yahei, sans-serif;
+	font-weight: 100;
+}
+@media only screen and (max-width: 620px) {
+	#main {
+		margin: 10em auto 2em;
+	}
+	.psgal figure {
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	#footer .oh {
+		display: block;
+	}
+}

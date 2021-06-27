@@ -1,0 +1,40 @@
+html
+	head
+		title= site.title + ' • 水八口'
+		+h.headers
+		+h.load('font', '/template/style.scss')
+		link(rel='apple-touch-icon', href=site.site_avatar)
+
+	body
+		.wrapper
+			aside
+				#logo
+					img#icon(src=site.site_avatar, alt=site.title)
+					+font('chaomingti')
+						#name 水八口
+				ul#info
+					li
+						i.fa-fw.fa.fa-user
+						| Shuibaco
+					li
+						i.fa-fw.fa.fa-envelope
+						| hi#shuiba.co
+					li
+						i.fa-fw.fa.fa-map-marker
+						| Kobe, Japan
+					li
+						i.fa-fw.fa.fa-home
+						| Made in China
+
+			main
+				p Hi, my <ruby>name<rt>nick</rt></ruby> is Shuibaco. Nice to meet you!
+				p I love <a href='/photography'><ruby>photography<rt>/photography</rt></ruby></a>, <a href='//demo.shuiba.co' target='_blank'><ruby>web design<rt>demo site</rt></ruby></a> and painting; <a href='https://goo.gl/iqntp4' target='_blank'><ruby>travelling<rt>Google Maps</rt></ruby></a>, <a href='//blog.shuiba.co' target='_blank'><ruby>blogging<rt>in Chinese</rt></ruby></a> and singing are also where my passion lies. You can find more about me in my blog.
+				p My life motto is SBC, which comes from my name Shuibaco, means <i>simple</i>, <i>bright</i> and <i>calm</i>.
+				p Thank you for visiting my site. Please feel free to drop me an email if you have any questions. Looking forward to hearing from you :)
+
+			footer
+				div= '© 2016-' + site.now.year + ' ' + site.title + '. All rights reserved.'
+				div.oh
+					| Powered by <a href='https://bitcron.com' target='_blank'>Bitcron</a>.
+				div.oh
+					| Special thanks to <a href='https://db.tt/zEJMgGcl5u' target='_blank'>Dropbox</a> and <a href='https://daringfireball.net/projects/markdown/' target='_blank'>Markdown</a>.
