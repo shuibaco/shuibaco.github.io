@@ -18,11 +18,37 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-  <link rel="stylesheet" href="styles.scss">
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'bdk6wjq',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
 </head>
 
 <body>
-  Hello world!
-  <!-- <script src="scripts.js"></script> -->
+  <header>
+    <img src="logo.svg" alt="Shuibaco's logo">
+    <p>Hi, nice to meet you! This is Shuibaco's personal website. Hope you enjoy it!<br>Feel free to drop me an email to <i>hi#shuiba.co</i>. Looking forward to hearing from you :)</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="https://blog.shuiba.co" target="_blank">Blog</a></li>
+      <li><a href="https://goo.gl/iqntp4" target="_blank">Footprints</a></li>
+      <li><a href="https://www.instagram.com/shuibaco/" target="_blank">Instagram</a></li>
+      <li><a href="https://github.com/shuibaco" target="_blank">GitHub</a></li>
+      <li><a href="/lifetime" target="_blank">Lifetime</a></li>
+      <li><a href="/resume" target="_blank">Resume</a></li>
+    </ul>
+  </nav>
+  <footer>
+    <p>Since 2016. Made with ❤ by Shuibaco.</p>
+  </footer>
 </body>
 </html>
