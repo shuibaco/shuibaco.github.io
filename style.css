@@ -13,7 +13,7 @@ a {
 }
 header img {
   width: 100px;
-  margin: 5em 0 0;
+  margin: 4em 0 0;
 }
 header p {
   margin: 1em;
@@ -44,4 +44,5 @@ footer {
   width: 100vw;
   font-size: 0.9em;
   color: #a7b3c0;
+  background: #c5d0d8;
 }
