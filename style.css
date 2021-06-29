@@ -16,7 +16,7 @@ header img {
   margin: 5em 0 0;
 }
 header p {
-  margin-top: -1em;
+  margin: 1em;
   color: #a7b3c0;
   font-size: 0.9em;
 }
@@ -43,5 +43,5 @@ footer {
   text-align: center;
   width: 100vw;
   font-size: 0.9em;
-  color: #e9ecef;
+  color: #a7b3c0;
 }
