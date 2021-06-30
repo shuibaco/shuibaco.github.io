@@ -10,6 +10,7 @@ body {
 a {
   text-decoration: none;
   color: #e9ecef;
+  transition: 0.5s;
 }
 header img {
   width: 100px;
@@ -36,6 +37,27 @@ nav ul li {
 nav ul li a {
   display: block;
   padding: 1.3vw;
+}
+nav ul li:nth-child(1) a:hover {
+  color: #90abc7;
+}
+nav ul li:nth-child(2) a:hover {
+  color: #99acc6;
+}
+nav ul li:nth-child(3) a:hover {
+  color: #a7adc3;
+}
+nav ul li:nth-child(4) a:hover {
+  color: #b2aec2;
+}
+nav ul li:nth-child(5) a:hover {
+  color: #bfafc0;
+}
+nav ul li:nth-child(6) a:hover {
+  color: #ceb0be;
+}
+nav ul li:nth-child(7) a:hover {
+  color: #d4b0bd;
 }
 footer {
   position: fixed;
